@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas {
+    width: 100%;
+    height: 100vh;
+    display: block; /* inline by default, it could add space to what is displayed, so we set it to block */
+}
