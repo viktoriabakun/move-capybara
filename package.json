@@ -1,0 +1,19 @@
+{
+  "name": "first-three-js-try",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.166.1",
+    "vite": "^5.3.4"
+  },
+  "packageManager": "pnpm@9.6.0"
+}
