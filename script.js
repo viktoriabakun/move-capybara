@@ -17,7 +17,7 @@ scene.add(light);
 let capybara;
 
 const loader = new GLTFLoader();
-loader.load('capybara/scene.gltf', function(gltf) {
+loader.load('/capybara/scene.gltf', function(gltf) {
     capybara = gltf.scene;
     capybara.scale.set(0.3, 0.3, 0.3);
     scene.add(capybara);
