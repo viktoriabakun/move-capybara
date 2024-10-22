@@ -22,12 +22,16 @@ loader.load('/capybara/scene.gltf', function(gltf) {
     capybara.scale.set(0.3, 0.3, 0.3);
     scene.add(capybara);
 
-    function animate() {
+    let lastTime = 0;
+    function animate(time) {
         requestAnimationFrame(animate);
-        capybara.rotation.y += 0.03;
+        const delta = time - lastTime;
+        lastTime = time;
+        const rotationSpeed = 0.002;
+        capybara.rotation.y += rotationSpeed * delta;
         renderer.render(scene, camera);
     }
-    animate();
+    requestAnimationFrame(animate);
 }, undefined, function(error) {
     console.error('Error while loading a model:', error);
 });
